@@ -14,7 +14,7 @@ void led_mode2_left(int *the_first_dark,uint32_t GPIO_Pin_x[]);
 void delay(void);
                       
 void  delay(void){
-  int count =0x6f000;
+  int count =0x1f000;
   while(count--);
 }  
 

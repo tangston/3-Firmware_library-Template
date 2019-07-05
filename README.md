@@ -1,2 +1,22 @@
-# 3-Firmware_library-Template
- The first broad_support_package for HNUST-F103
+# 3-固件库编程走跑马灯
+ UseMicroLib
+
+## 编码用的GBK
+## 这节课把上次的寄存器编程，换成了固件库编程，带大家读官方的源码
+# 我们的keil5 for ARM需要去ARM官方下STM32MDK 是免费的
+## 注释详尽适合新手搭配野火STM32教程入门
+
+## 用不上的文件 我都删掉了，加快编译速度，防止新手进入陌生迷茫期
+
+## 功能：按一下按键就跑一次跑马灯，用的方法叫轮询,没用中断
+## 用户可以自行看看，还有一个跑马灯函数没用上，可以自己配置，有详尽的使用说明
+
+# 例如
+```
+/**
+* @brief 仅一个灯亮的左方向跑马灯
+* @param *the_first_light:可以是任意变量，如变量a=3，输入时 &a 即可，运行个灯之后会自动将*the_first_light指针内存的值+1
+* @param uint32_t GPIO_Pin_x[]这里还没配置好，应该做到主函数能直接调用最好，因为LED一共就7个
+* 
+*/
+```
